@@ -9,6 +9,7 @@ html {
 
 body{
 	width:940px; /*This allows the website to be vied in have screen*/
+	min-height: 1080px;
 	margin: auto;
 	background-color: #202020;
 }
@@ -16,6 +17,8 @@ body{
 h1{
 	font-size: 200%;
 	font-weight: bold;
+	padding: 25px;
+	display: block;
 }
 
 h2{
@@ -41,4 +44,19 @@ h5 {
 h6 {
 	font-size: 100%;
 	font-weight: bold;
+}
+
+header{
+	display: flex;
+}
+
+nav{
+	border: green 5px solid;
+}
+nav ul{
+	text-align: center;
+}
+
+nav ul li{
+	display: inline;
 }
