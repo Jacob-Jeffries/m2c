@@ -1,6 +1,17 @@
 * {
-	background-color: beige;
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+html {
+	background-color: black;
+	color: green;
+}
+
+body{
+	width:940px; /*This allows the website to be vied in have screen*/
+	min-height: 1080px;
+	margin: auto;
+	background-color: #202020;
 }
 
 h1{
@@ -31,4 +42,54 @@ h5 {
 h6 {
 	font-size: 100%;
 	font-weight: bold;
+}
+
+header{
+	display: flex;
+	border: greenyellow 5px dashed;
+	background-color: black;
+	/* position: relative; */
+	/* justify-content: space-between; */
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+#head01 {
+	border: orange 5px double;
+	display: flex;
+	margin-left: 10px;
+}
+
+#head02 {
+	display: flex;
+	margin-left: 10px;
+}
+
+nav{
+	border: green 5px solid;
+	display: flex;
+	/* align-self: flex-end; */
+	/* position: absolute;
+	left: 600px; */
+
+}
+nav ul{
+	display: flex;
+	/* text-align: center; */
+}
+
+nav ul li{
+	display: inline-block;
+	margin: 0px 5px;
+}
+
+main{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+.card {
+	border: yellow 5px solid;
+	width: 600px;
 }
