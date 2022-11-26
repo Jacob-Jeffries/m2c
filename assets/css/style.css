@@ -17,8 +17,6 @@ body{
 h1{
 	font-size: 200%;
 	font-weight: bold;
-	padding: 25px;
-	display: block;
 }
 
 h2{
@@ -48,15 +46,50 @@ h6 {
 
 header{
 	display: flex;
+	border: greenyellow 5px dashed;
+	background-color: black;
+	/* position: relative; */
+	/* justify-content: space-between; */
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+#head01 {
+	border: orange 5px double;
+	display: flex;
+	margin-left: 10px;
+}
+
+#head02 {
+	display: flex;
+	margin-left: 10px;
 }
 
 nav{
 	border: green 5px solid;
+	display: flex;
+	/* align-self: flex-end; */
+	/* position: absolute;
+	left: 600px; */
+
 }
 nav ul{
-	text-align: center;
+	display: flex;
+	/* text-align: center; */
 }
 
 nav ul li{
-	display: inline;
+	display: inline-block;
+	margin: 0px 5px;
+}
+
+main{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+.card {
+	border: yellow 5px solid;
+	width: 600px;
 }
