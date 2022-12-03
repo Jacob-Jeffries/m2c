@@ -10,44 +10,54 @@ body { /*Think of this as the page wrapper - I guess this is an older way of thi
 	background-color: #202020;
 	color: white;
 	margin: 0 25px;
-	border: lightblue 3px solid;
+	/* border: lightblue 3px solid; */
 }
 
 h1{
 	font-size: 200%;
 	font-weight: bold;
 	display: block;
+	margin 20px;
 }
 
 h2{
 	font-size: 175%;
 	font-weight: bold;
+	margin: 20px;
 }
 
 h3 {
 	font-size: 150%;
 	font-weight: bold;
+	margin: 10px;
 }
 
 h4{
 	font-size: 125%;
 	font-weight: bold;
+	margin: 10px;
 }
 
 h5 {
 	font-size: 112%;
 	font-weight: bold;
+	margin: 10px;
 }
 
 h6 {
 	font-size: 100%;
 	font-weight: bold;
+	margin: 10px;
+}
+
+p{
+	margin: 10px;
 }
 
 
 /*The code below outlines the <header> tag and its elements*/
 header{
-	border: yellow 2px dashed;
+	/* border: yellow 2px dashed; */
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -57,7 +67,7 @@ header{
 
 #top{
 	display: flex;
-	border: green 2px solid;
+	/* border: green 2px solid; */
 	justify-content: center;
 	align-items: center;
 	padding: 10px;
@@ -65,7 +75,7 @@ header{
 
 nav{
 	display: flex;
-	border: green 2px solid;
+	/* border: green 2px solid; */
 	align-self: flex-end;
 	justify-content: center;
 	font-size: 125%;
@@ -81,7 +91,7 @@ nav{
 
 /*The code below outlines the main <figure> tag and its elements*/
 figure{
-	border: pink 2px solid;
+	/* border: pink 2px solid; */
 	height: 800px;
     margin-bottom: 25px;
     background-image: url("../images/smiley.png");
@@ -99,41 +109,35 @@ figcaption{
 /*--------------The following code outlines the <main> tag and its elements----------------------*/
 main{
 	display: flex;
-	border: yellow 2px dashed;
+	/* border: yellow 2px dashed; */
 	min-height: max-content;
 }
 
-aside{
-	display:flex;
-	border: green 2px solid;
-	width: 15%;
-	padding:10px;
-	flex-direction: column;
-	justify-content: space-around;
-}
-
-.add{
-	border: lightsalmon 2px solid;
-	height: 33%;
-}
-
 #main-content{
-	border: green 2px double;
+	/* border: green 2px double; */
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-	width:70%;
+	/* width:70%; */
 	padding: 10px;
 }
 
-.mc00{
-	font-size: small;
-	margin-left:10px;
+.card{
+	/* border: orange 2px solid; */
 }
 
-.card{
-	border: orange 2px solid;
+.mc-aside {
+	width: 30%;
+	border-top: orange 2px solid;
+	border-right:  orange 2px solid;
+	border-radius: 50px;
 }
+
+#mc00{
+	display: flex;
+}
+
+
 /*-----------------------------END of <main> tag style-------------------------------------------*/
 
 /*The Following code makes the site viewable when clicked to half 1080p*/
@@ -204,7 +208,7 @@ specifically the Note 20, bc that is what I own, and apple sucks one*/
 footer{
 	display: flex;
 	height: 100px;
-	border: yellow 2px dashed;
+	/* border: yellow 2px dashed; */
 	height: 100px;
 	justify-content: center;
 	align-items: center;
