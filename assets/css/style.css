@@ -166,9 +166,10 @@ main{
 }
 
 .text {
+	padding: 10px;
 	border: hidden;
 	border-radius: 25px;
-	box-shadow: 10px 10px 5px rebeccapurple;
+	box-shadow: 10px 10px 8px rebeccapurple;
 }
 
 #mc00{
