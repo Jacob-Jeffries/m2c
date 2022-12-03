@@ -130,7 +130,8 @@ main{
 }
 
 .card{
-	/* border: orange 2px solid; */
+	/* border-right: rebeccapurple 5px double; */
+	margin-right: 25px;
 	padding:30px;
 }
 
@@ -162,6 +163,10 @@ main{
 	border-radius: 25px;
 	min-height: 100%;
 	min-width: 100%;
+}
+
+.text {
+	border-bottom: rebeccapurple 2px dashed;
 }
 
 #mc00{
@@ -211,6 +216,9 @@ main{
 		border-radius: 25px;
 		min-width: 100%;
 		min-height: 100%;
+	}
+	.text {
+		border: none;
 	}
 }
 
