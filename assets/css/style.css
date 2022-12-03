@@ -17,7 +17,7 @@ h1{
 	font-size: 200%;
 	font-weight: bold;
 	display: block;
-	margin 20px;
+	margin: 20px;
 }
 
 h2{
@@ -124,6 +124,7 @@ main{
 
 .card{
 	/* border: orange 2px solid; */
+	padding:30px;
 }
 
 .mc-aside {
@@ -137,7 +138,17 @@ main{
 	display: flex;
 }
 
+#mc01{
+	display: flex;
+}
 
+#mc02{
+	display: flex;
+}
+
+#mc03{
+	display: flex;
+}
 /*-----------------------------END of <main> tag style-------------------------------------------*/
 
 /*The Following code makes the site viewable when clicked to half 1080p*/
