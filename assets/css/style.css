@@ -1,3 +1,8 @@
+:root{
+	--aside-border: rgb(255, 119, 0) 2px solid;
+	--inside-border: rgb(0, 206, 0) 2px solid;
+}
+
 * {
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -98,6 +103,7 @@ figure{
     background-size: contain;
 	background-repeat: no-repeat;
     background-position: center;
+	margin: 20px;
 }
 
 figcaption{
@@ -129,9 +135,20 @@ main{
 
 .mc-aside {
 	min-width: 300px;
-	border-top: orange 2px solid;
-	border-right:  orange 2px solid;
-	border-radius: 50px;
+	border-top: var(--aside-border);
+	border-right: var(--aside-border);
+	border-radius: 25px;
+	padding:5px;
+}
+
+
+.inside{
+	display: flex;
+	justify-content: flex-end;
+	border-top: var(--inside-border);
+	border-right: var(--inside-border);
+	border-radius: 25px;
+	min-height: 100%;
 }
 
 #mc00{
@@ -168,9 +185,19 @@ main{
 	.mc-aside {
 		min-width: 300px;
 		border: none;
-		border-bottom: orange 2px solid;
-		border-left:  orange 2px solid;
-		border-radius: 50px;
+		border-bottom: var(--aside-border);
+		border-left: var(--aside-border);
+		border-radius: 25px;
+	}
+	.inside{
+		display: flex;
+		justify-content: center;
+		border: none;
+		border-bottom: var(--inside-border);
+		border-left: var(--inside-border);
+		border-radius: 25px;
+		min-width: 100%;
+		min-height: 100%;
 	}
 }
 
@@ -182,10 +209,6 @@ main{
 	.navigation li{
 		display: block;
 		margin: 10px 0;
-	}
-	main{
-		flex-direction: column;
-		align-items: center;
 	}
 }
 
