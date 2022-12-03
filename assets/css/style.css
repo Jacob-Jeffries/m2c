@@ -166,7 +166,9 @@ main{
 }
 
 .text {
-	border-bottom: rebeccapurple 2px dashed;
+	border: hidden;
+	border-radius: 25px;
+	box-shadow: 10px 10px 5px rebeccapurple;
 }
 
 #mc00{
@@ -218,7 +220,7 @@ main{
 		min-height: 100%;
 	}
 	.text {
-		border: none;
+		box-shadow: none;
 	}
 }
 
