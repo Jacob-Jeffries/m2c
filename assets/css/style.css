@@ -3,11 +3,11 @@
 }
 
 html{
-	background-color: #101010;
+	background-color: black;
 }
 
 body { /*Think of this as the page wrapper - I guess this is an older way of thinking!*/
-	background-color: #202020;
+	background-color: #101010;
 	color: white;
 	margin: 0 25px;
 	/* border: lightblue 3px solid; */
@@ -128,7 +128,7 @@ main{
 }
 
 .mc-aside {
-	width: 30%;
+	min-width: 300px;
 	border-top: orange 2px solid;
 	border-right:  orange 2px solid;
 	border-radius: 50px;
@@ -161,6 +161,16 @@ main{
 	}
 	nav{
 		width: 100%;
+	}
+	.card{
+		flex-direction: column;
+	}
+	.mc-aside {
+		min-width: 300px;
+		border: none;
+		border-bottom: orange 2px solid;
+		border-left:  orange 2px solid;
+		border-radius: 50px;
 	}
 }
 
