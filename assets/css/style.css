@@ -1,53 +1,68 @@
+:root{
+	--aside-border: rgb(255, 119, 0) 2px solid;
+	--inside-border: rgb(0, 206, 0) 2px solid;
+}
+
 * {
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 html{
-	background-color: #101010;
+	background-color: black;
 }
 
 body { /*Think of this as the page wrapper - I guess this is an older way of thinking!*/
-	background-color: #202020;
+	background-color: #101010;
 	color: white;
 	margin: 0 25px;
-	border: lightblue 3px solid;
+	/* border: lightblue 3px solid; */
 }
 
 h1{
 	font-size: 200%;
 	font-weight: bold;
 	display: block;
+	margin: 20px;
 }
 
 h2{
 	font-size: 175%;
 	font-weight: bold;
+	margin: 20px;
 }
 
 h3 {
 	font-size: 150%;
 	font-weight: bold;
+	margin: 10px;
 }
 
 h4{
 	font-size: 125%;
 	font-weight: bold;
+	margin: 10px;
 }
 
 h5 {
 	font-size: 112%;
 	font-weight: bold;
+	margin: 10px;
 }
 
 h6 {
 	font-size: 100%;
 	font-weight: bold;
+	margin: 10px;
+}
+
+p{
+	margin: 10px;
 }
 
 
 /*The code below outlines the <header> tag and its elements*/
 header{
-	border: yellow 2px dashed;
+	/* border: yellow 2px dashed; */
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -57,7 +72,7 @@ header{
 
 #top{
 	display: flex;
-	border: green 2px solid;
+	/* border: green 2px solid; */
 	justify-content: center;
 	align-items: center;
 	padding: 10px;
@@ -65,7 +80,7 @@ header{
 
 nav{
 	display: flex;
-	border: green 2px solid;
+	/* border: green 2px solid; */
 	align-self: flex-end;
 	justify-content: center;
 	font-size: 125%;
@@ -81,13 +96,14 @@ nav{
 
 /*The code below outlines the main <figure> tag and its elements*/
 figure{
-	border: pink 2px solid;
-	height: 800px;
+	/* border: pink 2px solid; */
+	height: 400px;
     margin-bottom: 25px;
     background-image: url("../images/smiley.png");
     background-size: contain;
 	background-repeat: no-repeat;
     background-position: center;
+	margin: 20px;
 }
 
 figcaption{
@@ -99,47 +115,63 @@ figcaption{
 /*--------------The following code outlines the <main> tag and its elements----------------------*/
 main{
 	display: flex;
-	border: yellow 2px dashed;
+	/* border: yellow 2px dashed; */
 	min-height: max-content;
 }
 
-aside{
-	display:flex;
-	border: green 2px solid;
-	width: 15%;
-	padding:10px;
-	flex-direction: column;
-	justify-content: space-around;
-}
-
-.add{
-	border: lightsalmon 2px solid;
-	height: 33%;
-}
-
 #main-content{
-	border: green 2px double;
+	/* border: green 2px double; */
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-	width:70%;
+	/* width:70%; */
 	padding: 10px;
 }
 
-.mc00{
-	font-size: small;
-	margin-left:10px;
+.card{
+	/* border: orange 2px solid; */
+	padding:30px;
 }
 
-.card{
-	border: orange 2px solid;
+.mc-aside {
+	min-width: 300px;
+	border-top: var(--aside-border);
+	border-right: var(--aside-border);
+	border-radius: 25px;
+	padding:5px;
+}
+
+
+.inside{
+	display: flex;
+	justify-content: flex-end;
+	border-top: var(--inside-border);
+	border-right: var(--inside-border);
+	border-radius: 25px;
+	min-height: 100%;
+}
+
+#mc00{
+	display: flex;
+}
+
+#mc01{
+	display: flex;
+}
+
+#mc02{
+	display: flex;
+}
+
+#mc03{
+	display: flex;
 }
 /*-----------------------------END of <main> tag style-------------------------------------------*/
 
-/*The Following code makes the site viewable when clicked to half 1080p*/
 @media screen and (max-width: 992px) {
 	figure{
-		height: 400px;
+		height: 200px;
+		margin: 20px;
 	}
 	#top{
 		width: 100%;
@@ -147,64 +179,44 @@ aside{
 	nav{
 		width: 100%;
 	}
-}
-
-/*The code below tailors to landscape cell phone - 
-specifically the Note 20, bc that is what I own, and apple sucks one*/
-@media screen and (max-width: 915px) {
-	figure{
-		height: 200px;
+	.card{
+		flex-direction: column;
 	}
-	main{
-		flex-wrap: wrap;
+	.mc-aside {
+		min-width: 300px;
+		border: none;
+		border-bottom: var(--aside-border);
+		border-left: var(--aside-border);
+		border-radius: 25px;
 	}
-	#main-content{
-		order: 1;
-		width: 75%;
-	}
-	#aside-01{
-		order: 1;
-		width: 25%;
-	}
-	#aside-02 {
-		order: 3;
-		width: 100%;
+	.inside{
+		display: flex;
+		justify-content: center;
+		border: none;
+		border-bottom: var(--inside-border);
+		border-left: var(--inside-border);
+		border-radius: 25px;
+		min-width: 100%;
+		min-height: 100%;
 	}
 }
 
-/*The following code styles a portrait cell phone*/
-@media screen and (max-width: 669px) {
+/*The following code styles a narrow screen*/
+@media screen and (max-width: 610px) {
 	figure{
-		display: none; /*Why don't more companies do this? I don't need your logo taking up my entire screen*/
+		display: none;
 	}
 	.navigation li{
 		display: block;
 		margin: 10px 0;
 	}
-	main{
-		flex-direction: column;
-		align-items: center;
-	}
-	#main-content{
-		order: 1;
-		width: 100%;
-	}
-	#aside-01{
-		order: 2;
-		width: 100%;
-	}
-	#aside-02 {
-		order: 2;
-		width: 100%;
-	}
 }
-
 
 /*The following code outlines the <footer> tag and its elements*/
 footer{
 	display: flex;
 	height: 100px;
-	border: yellow 2px dashed;
+	/* border: yellow 2px dashed; */
 	height: 100px;
 	justify-content: center;
 	align-items: center;
