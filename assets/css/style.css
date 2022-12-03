@@ -92,7 +92,7 @@ nav{
 /*The code below outlines the main <figure> tag and its elements*/
 figure{
 	/* border: pink 2px solid; */
-	height: 800px;
+	height: 400px;
     margin-bottom: 25px;
     background-image: url("../images/smiley.png");
     background-size: contain;
@@ -151,10 +151,10 @@ main{
 }
 /*-----------------------------END of <main> tag style-------------------------------------------*/
 
-/*The Following code makes the site viewable when clicked to half 1080p*/
 @media screen and (max-width: 992px) {
 	figure{
-		height: 400px;
+		height: 200px;
+		margin: 20px;
 	}
 	#top{
 		width: 100%;
@@ -174,33 +174,10 @@ main{
 	}
 }
 
-/*The code below tailors to landscape cell phone - 
-specifically the Note 20, bc that is what I own, and apple sucks one*/
-@media screen and (max-width: 915px) {
+/*The following code styles a narrow screen*/
+@media screen and (max-width: 610px) {
 	figure{
-		height: 200px;
-	}
-	main{
-		flex-wrap: wrap;
-	}
-	#main-content{
-		order: 1;
-		width: 75%;
-	}
-	#aside-01{
-		order: 1;
-		width: 25%;
-	}
-	#aside-02 {
-		order: 3;
-		width: 100%;
-	}
-}
-
-/*The following code styles a portrait cell phone*/
-@media screen and (max-width: 669px) {
-	figure{
-		display: none; /*Why don't more companies do this? I don't need your logo taking up my entire screen*/
+		display: none;
 	}
 	.navigation li{
 		display: block;
@@ -210,20 +187,7 @@ specifically the Note 20, bc that is what I own, and apple sucks one*/
 		flex-direction: column;
 		align-items: center;
 	}
-	#main-content{
-		order: 1;
-		width: 100%;
-	}
-	#aside-01{
-		order: 2;
-		width: 100%;
-	}
-	#aside-02 {
-		order: 2;
-		width: 100%;
-	}
 }
-
 
 /*The following code outlines the <footer> tag and its elements*/
 footer{
