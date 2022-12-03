@@ -1,6 +1,7 @@
 :root{
-	--aside-border: rgb(255, 119, 0) 2px solid;
-	--inside-border: rgb(0, 206, 0) 2px solid;
+	--aside-border: rgb(0, 255, 64) 2px solid;
+	--middle-border: rebeccapurple 2px solid;
+	--inside-border: yellow 2px solid;
 }
 
 * {
@@ -138,9 +139,20 @@ main{
 	border-top: var(--aside-border);
 	border-right: var(--aside-border);
 	border-radius: 25px;
-	padding:5px;
+	padding: 3px;
 }
 
+.middle{
+	display: flex;
+	justify-content: flex-end;
+	border-top: var(--middle-border);
+	border-right: var(--middle-border);
+	border-radius: 25px;
+	padding: 3px;
+	min-height: 100%;
+	min-width: 100%;
+
+}
 
 .inside{
 	display: flex;
@@ -149,6 +161,7 @@ main{
 	border-right: var(--inside-border);
 	border-radius: 25px;
 	min-height: 100%;
+	min-width: 100%;
 }
 
 #mc00{
