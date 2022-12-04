@@ -1,21 +1,3 @@
-# Online Portfolio Page
-
-## Description
-
-This page serves as a landing page for my deployed, online projects such that future employers may view my work.
-
-## Installation
-
-This page is hosted on GitHub pages, and no installation is required.
-
-## Usage
-
-This page is currently a static HTML/CSS page programmed to be viewed across multiple devices and screen sizes. 
-
-![page screenshot](./portfolio_screenshot.png)
-
-## License 
-
 MIT License
 
 Copyright (c) [2022] [Jacob Jeffries]
@@ -37,5 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-
