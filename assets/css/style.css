@@ -4,6 +4,8 @@
 	--inside-border: yellow 2px solid;
 }
 
+/*Interesting, the mini project from the end of the CSS module designates a narrow-up design. Starting the most narrow view for portrait phones, then moving up for larger screen sizes*/
+
 * {
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -179,18 +181,28 @@ main{
 	box-shadow: 10px 10px 8px rebeccapurple;
 }
 
+/*This is the About Me section*/
 #mc00{
 	display: flex;
 }
 
+/*This is the Portfolio section*/
 #mc01{
 	display: flex;
 }
 
+/*This is the Education section*/
 #mc02{
 	display: flex;
 }
 
+#mc02 li{
+	margin-bottom: 20px;
+	list-style: inside;
+	list-style-type: none;
+}
+
+/*This is the Contact Me section*/
 #mc03{
 	display: flex;
 }
