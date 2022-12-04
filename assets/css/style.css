@@ -14,12 +14,12 @@ html{
 	background-color: black;
 }
 
-body { /*Think of this as the page wrapper - I guess this is an older way of thinking!*/
+/*Think of this as the page wrapper - I guess this is an older way of thinking!*/
+body { 
 	background-color: #101010;
 	color: white;
 	margin: 0 25px;
 	font-size: 16px;
-	/* border: lightblue 3px solid; */
 }
 
 h1{
@@ -66,7 +66,6 @@ p{
 
 /*The code below outlines the <header> tag and its elements*/
 header{
-	/* border: yellow 2px dashed; */
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -76,7 +75,6 @@ header{
 
 #top{
 	display: flex;
-	/* border: green 2px solid; */
 	justify-content: center;
 	align-items: center;
 	padding: 10px;
@@ -84,7 +82,6 @@ header{
 
 nav{
 	display: flex;
-	/* border: green 2px solid; */
 	align-self: flex-end;
 	justify-content: center;
 	font-size: 125%;
@@ -100,7 +97,6 @@ nav{
 
 /*The code below outlines the main <figure> tag and its elements*/
 figure{
-	/* border: pink 2px solid; */
 	height: 400px;
     margin-bottom: 25px;
     background-image: url("../images/smiley.png");
@@ -119,21 +115,17 @@ figcaption{
 /*--------------The following code outlines the <main> tag and its elements----------------------*/
 main{
 	display: flex;
-	/* border: yellow 2px dashed; */
 	min-height: max-content;
 }
 
 #main-content{
-	/* border: green 2px double; */
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-	/* width:70%; */
 	padding: 10px;
 }
 
 .card{
-	/* border-right: rebeccapurple 5px double; */
 	margin-right: 25px;
 	padding:30px;
 }
