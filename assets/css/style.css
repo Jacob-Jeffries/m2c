@@ -1,4 +1,5 @@
 :root{
+	--green: rgb(0, 255, 64);
 	--aside-border: rgb(0, 255, 64) 2px solid;
 	--middle-border: rebeccapurple 2px solid;
 	--inside-border: yellow 2px solid;
@@ -16,7 +17,7 @@ html{
 
 /*Think of this as the page wrapper - I guess this is an older way of thinking!*/
 body { 
-	background-color: #101010;
+	background-color: #000011;
 	color: white;
 	margin: 0 25px;
 	font-size: 16px;
@@ -33,12 +34,14 @@ h2{
 	font-size: 175%;
 	font-weight: bold;
 	margin: 20px;
+	font-family: Courier, monospace;
 }
 
 h3 {
 	font-size: 150%;
 	font-weight: bold;
 	margin: 10px;
+	font-family: Courier, monospace;
 }
 
 h4{
@@ -151,10 +154,12 @@ main{
 	border-radius: 25px;
 	min-height: 100%;
 	min-width: 100%;
+	background-color: aqua;
+	color: black;
 }
 
 .text {
-	padding: 10px;
+	padding: 20px;
 	line-height: 1.5;
 	word-spacing: 0.2em;
 }
@@ -186,13 +191,40 @@ main{
 }
 /*-----------------------------END of <main> tag style-------------------------------------------*/
 
+/*The following code outlines the <footer> tag and its elements*/
+footer{
+	display: flex;
+	border: black 1px solid;
+	border-radius: 20px;
+	background-color: aqua;
+	color:black;
+	margin:50px;
+}
+
+/*Code snippet taken from: https://www.w3docs.com/snippets/css/how-to-create-a-blinking-effect-with-css3-animations.html*/
+.blink{
+	animation: blink-animation 0.75s steps(5, start) infinite;
+	-webkit-animation: blink-animation 0.75s steps(5, start) infinite;
+  }
+  @keyframes blink-animation {
+	to {
+	  visibility: hidden;
+	}
+  }
+  @-webkit-keyframes blink-animation {
+	to {
+	  visibility: hidden;
+	}
+}
+/*END of <footer> tag style*/
+
 /*Think of this as the min-width for these styles to take affect*/
 @media screen and (min-width: 768px){
 	figure{
 		display:block;
 		height: 200px;
 		margin-bottom: 25px;
-		background-image: url("../images/smiley.png");
+		background-image: url("../images/ti-994a.png");
 		background-size: contain;
 		background-repeat: no-repeat;
 		background-position: center;
@@ -214,12 +246,13 @@ main{
 	}
 	nav{
 		justify-content: end;
+		margin-right: 50px;
 	}
 	figure{
 		display:block;
 		height: 400px;
 		margin-bottom: 25px;
-		background-image: url("../images/smiley.png");
+		background-image: url("../images/ti-994a.png");
 		background-size: contain;
 		background-repeat: no-repeat;
 		background-position: center;
@@ -252,7 +285,7 @@ main{
 	}
 	.inside{
 		display: flex;
-		justify-content: flex-end;
+		/* justify-content: flex-end; */
 		border: none;
 		border-top: var(--inside-border);
 		border-right: var(--inside-border);
@@ -263,21 +296,13 @@ main{
 	.text{
 		margin:0 25px;
 		width: 100%;
+		border: var(--green) 1px solid;
+		border-radius: 25px;
+		transition: all 0.5s ease-in-out;
 	}
 	.text:hover{
-		border: hidden;
 		border-radius: 25px;
-		box-shadow: inset 0px 0px 8px rebeccapurple, 0px 0px 8px yellow;
+		box-shadow: inset 0px 0px 8px yellow, 0px 0px 10px rebeccapurple;
 	}
 }
 
-/*The following code outlines the <footer> tag and its elements*/
-footer{
-	display: flex;
-	height: 100px;
-	/* border: yellow 2px dashed; */
-	height: 100px;
-	justify-content: center;
-	align-items: center;
-}
-/*END of <footer> tag style*/
