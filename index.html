@@ -27,8 +27,10 @@
   </head>
 
   <body>
-    <header>
+    <!--This is the main header section of the page and contains the <nav> element-->
+    <header> 
 		<h1 id="top">Jacob Jeffries | Online Portfolio</h1>
+      <!--The <nav> section contains links to other sections of the page-->
       <nav class="navigation">
         <ul>
           <li><a href="#mc00">About Me</a></li>
@@ -39,21 +41,29 @@
       </nav>
     </header>
 
+    <!--I decided to add a nostalgic picture instead of a pic of myself - it shouldn't matter what I look like-->
     <figure id="top-figure">
       <figcaption>About Me</figcaption>
     </figure>
     
+    <!--The next section of code contains the main contents of the page, everything except the footer is in this section-->
     <main>      
-      <section id="main-content">
+      <!--I could have deleted this and brought everything up to the main tag-->
+      <section id="main-content"> 
+
+        <!--The following code build out the "About Me" Section-->
         <section class="card" id="mc00">
+
+          <!--I used an <aside> tag to format the "heading" section for each code-block-->
           <aside class="mc-aside" id="a-mc00">
-            <section class="middle">
-             <section class="inside">
+            <div class="middle">
+             <div class="inside">
+              <!--To get triple borders I nested the heading tag-->
               <h2>TI BASIC READY<br>
                 > 10 PRINT "About Me"
-              </h2>
-             </section>
-            </section>
+              </h2 alt="About me section">
+             </div>
+            </div>
           </aside>
 
           <section class="text" id="t-mc00">
@@ -62,19 +72,24 @@
             <p>Throughout my youth and professional path I have used computers to facilitate projects, increase my efficacy, and to have fun! My computer programing experience began with BASIC on a TI-99/4a computer that my uncle gave me. A few years down the road, I built my first DX2 486 computer and got to experience the wonders of a GUI; DOS 6.22, Windows 3.11 and a VGA graphics card had me off to the races. I began learning C, in middle school; incrementally adding Python, R, HTML, CSS, JavaScript, and PHP to my repertoire.</p>
           </section>
         </section>
+        <!--END of ABOUT ME section-->
 
         <!--Golly, I really like my new keyboard-->
 
+        <!--The following code block links my deployed portfolio-->
         <section class="card" id="mc01">
           <aside class="mc-aside" id="a-mc01">
-              <section class="middle">
-                <section class="inside">
-                  <h2>> 20 PRINT "Portfolio"</h2>
-                </section>    
-              </section>
+              <div class="middle">
+                <div class="inside">
+                  <h2>> 20 PRINT "Portfolio"</h2 alt="Portfolio Section">
+                </div>    
+              </div>
           </aside>
 
           <section class="text" id="t-mc01">
+            <!--The following section of code outlines my links to deployed projects, as projects are finished I will add them similar to the port0 & port1 sections-->
+
+            <!--Instead of linking images or using the figure tag, I made the images CSS backgrounds. I am not sure if that is a good thing?-->
             
             <a href="https://jacob-jeffries.github.io/prework/" class="port" id="port0" target="_blank">
               <div class="title">Prework Page</div>
@@ -84,22 +99,26 @@
               <div class="title">Landing Page</div>
             </a>
 
+            <!--The following are placeholders for future content-->
             <div class="port" id="port2">Future content will be added</div>
             <div class="port" id="port3">Future content will be added</div>
             <div class="port" id="port4">Future content will be added</div>
           </section>
         </section>
+        <!--END of PORTFOLIO section-->
 
+        <!--The following code outlines my education and professional training-->
         <section class="card" id="mc02">
           <aside class="mc-aside" id="a-mc02">
-            <section class="middle">
-              <section class="inside">
+            <div class="middle">
+              <div class="inside">
                 <h2>> 30 PRINT "Education & Training"</h2>
-              </section>
-            </section>    
+              </div>
+            </div>    
           </aside>
 
           <section class="text" id="t-mc02">
+            <!--A simple <ul> list to describe my education & training-->
             <ul>
               <li>Full Stack Web Dev Boot Camp - MSU - Expected Completion May 2023</li>
               <li>24 Hour Laboratory Safety Training - LSI - July 2022</li>
@@ -110,14 +129,16 @@
             </ul>
           </section>
         </section>
-   
+        <!--END of EDUCATION & TRAINING section-->
+
+        <!--This begins the code-block that creates a form for folks to contact me-->   
         <section class="card" id="mc03">
           <aside class="mc-aside" id="a-mc03">
-            <section class="middle">
-              <section class="inside">
+            <div class="middle">
+              <div class="inside">
                 <h2>> 40 PRINT "Contact Me"</h2>
-              </section>
-            </section>
+              </div>
+            </div>
           </aside>
 
           <section class="text" id="t-mc03">
@@ -129,6 +150,7 @@
                   <tr>
                     <td><label for="fname">First Name: </label></td>
                     <td><input type="text" id="fname" name="fname" placeholder="First Name"></td>
+                    <!--I switched from value to placeholder so you don't need to delete text to use the form-->
                   </tr>
                 
                   <tr>
@@ -149,15 +171,14 @@
                 <section id="button">
                   <input type="submit" value="Submit">
                 </section>
-    
               </fieldset>
-    
             </form>
           </section>
   	    </section>
+        <!--END of CONTACT ME section-->
    
       </section>
-
+      <!--END of MAIN CONTENT section; again - this could have been removed-->
     </main>
 
     <footer>
@@ -169,11 +190,9 @@
         Contact Me<br>
         Coded by Jacob Jeffries<br>
         > <span class="blink">_</span>
+        <!--I am really happy to have found a W3 site that explained blinking - I need to do more research-->
       </h3>
 	  </footer>
-    
-    <!--LINK Script Here-->
-    <script src="./assets/script.js"></script>
     
   </body>
 </html>
