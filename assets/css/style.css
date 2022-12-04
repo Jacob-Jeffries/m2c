@@ -262,8 +262,7 @@ main{
 	}
 	.text{
 		margin:0 25px;
-		flex: 0 0 75%;
-		max-width: 75%;
+		width: 100%;
 	}
 	.text:hover{
 		border: hidden;
