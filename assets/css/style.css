@@ -121,6 +121,7 @@ main{
 
 .card{
 	flex-direction: column;
+	margin: 10px 0px;
 }
 
 .mc-aside {
@@ -186,6 +187,11 @@ main{
 #mc03{
 	display: flex;
 }
+
+#mc03 fieldset{
+	border: none;
+}
+
 /*-----------------------------END of <main> tag style-------------------------------------------*/
 
 /*The following code outlines the <footer> tag and its elements*/
@@ -232,6 +238,7 @@ footer{
 	nav{
 		justify-content: center;
 	}
+
 	.navigation li{
 		display: inline;
 		margin: 0px 5px ;
