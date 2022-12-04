@@ -181,18 +181,28 @@ main{
 	box-shadow: 10px 10px 8px rebeccapurple;
 }
 
+/*This is the About Me section*/
 #mc00{
 	display: flex;
 }
 
+/*This is the Portfolio section*/
 #mc01{
 	display: flex;
 }
 
+/*This is the Education section*/
 #mc02{
 	display: flex;
 }
 
+#mc02 li{
+	margin-bottom: 20px;
+	list-style: inside;
+	list-style-type: none;
+}
+
+/*This is the Contact Me section*/
 #mc03{
 	display: flex;
 }
