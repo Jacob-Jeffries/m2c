@@ -1,10 +1,11 @@
 :root{
+	--green: rgb(0, 255, 64);
 	--aside-border: rgb(0, 255, 64) 2px solid;
 	--middle-border: rebeccapurple 2px solid;
 	--inside-border: yellow 2px solid;
 }
 
-/*Interesting, the mini project from the end of the CSS module designates a narrow-up design. Starting the most narrow view for portrait phones, then moving up for larger screen sizes*/
+/*Interesting, the mini project from the end of the CSS module designates a narrow-up design. Starting the most narrow view for portrait phones, then moving up for larger screen sizes. That means that I am coding the default style of the page for screens < 768px*/
 
 * {
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -14,12 +15,12 @@ html{
 	background-color: black;
 }
 
-body { /*Think of this as the page wrapper - I guess this is an older way of thinking!*/
-	background-color: #101010;
+/*Think of this as the page wrapper - I guess this is an older way of thinking!*/
+body { 
+	background-color: #000011;
 	color: white;
 	margin: 0 25px;
 	font-size: 16px;
-	/* border: lightblue 3px solid; */
 }
 
 h1{
@@ -33,12 +34,14 @@ h2{
 	font-size: 175%;
 	font-weight: bold;
 	margin: 20px;
+	font-family: Courier, monospace;
 }
 
 h3 {
 	font-size: 150%;
 	font-weight: bold;
 	margin: 10px;
+	font-family: Courier, monospace;
 }
 
 h4{
@@ -66,7 +69,6 @@ p{
 
 /*The code below outlines the <header> tag and its elements*/
 header{
-	/* border: yellow 2px dashed; */
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -76,38 +78,29 @@ header{
 
 #top{
 	display: flex;
-	/* border: green 2px solid; */
 	justify-content: center;
-	align-items: center;
 	padding: 10px;
+	width: 100%;
 }
 
 nav{
 	display: flex;
-	/* border: green 2px solid; */
+	width: 100%;
 	align-self: flex-end;
 	justify-content: center;
 	font-size: 125%;
 }
 
 .navigation li{
-	display: inline;
-	margin: 0px 5px ;
-	margin-right: 10px;
+	display: block;
+	margin: 10px 0;
 }
 /*END of <header> tag style*/
 
 
 /*The code below outlines the main <figure> tag and its elements*/
 figure{
-	/* border: pink 2px solid; */
-	height: 400px;
-    margin-bottom: 25px;
-    background-image: url("../images/smiley.png");
-    background-size: contain;
-	background-repeat: no-repeat;
-    background-position: center;
-	margin: 20px;
+	display: none;
 }
 
 figcaption{
@@ -119,29 +112,24 @@ figcaption{
 /*--------------The following code outlines the <main> tag and its elements----------------------*/
 main{
 	display: flex;
-	/* border: yellow 2px dashed; */
-	min-height: max-content;
 }
 
 #main-content{
-	/* border: green 2px double; */
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-	/* width:70%; */
 	padding: 10px;
 }
 
 .card{
-	/* border-right: rebeccapurple 5px double; */
-	margin-right: 25px;
+	flex-direction: column;
 	padding:30px;
 }
 
 .mc-aside {
 	min-width: 300px;
-	border-top: var(--aside-border);
-	border-right: var(--aside-border);
+	border-bottom: var(--aside-border);
+	border-left: var(--aside-border);
 	border-radius: 25px;
 	padding: 3px;
 }
@@ -160,25 +148,20 @@ main{
 
 .inside{
 	display: flex;
-	justify-content: flex-end;
-	border-top: var(--inside-border);
-	border-right: var(--inside-border);
+	justify-content: center;
+	border-bottom: var(--inside-border);
+	border-left: var(--inside-border);
 	border-radius: 25px;
 	min-height: 100%;
 	min-width: 100%;
+	background-color: aqua;
+	color: black;
 }
 
 .text {
-	padding: 10px;
+	padding: 20px;
 	line-height: 1.5;
 	word-spacing: 0.2em;
-}
-
-.text:hover{
-	font-size: 17px;
-	border: hidden;
-	border-radius: 25px;
-	box-shadow: 10px 10px 8px rebeccapurple;
 }
 
 /*This is the About Me section*/
@@ -208,65 +191,118 @@ main{
 }
 /*-----------------------------END of <main> tag style-------------------------------------------*/
 
-@media screen and (max-width: 992px) {
-	figure{
-		height: 200px;
-		margin: 20px;
-	}
-	#top{
-		width: 100%;
-	}
-	nav{
-		width: 100%;
-	}
-	.card{
-		flex-direction: column;
-	}
-	.mc-aside {
-		min-width: 300px;
-		border: none;
-		border-bottom: var(--aside-border);
-		border-left: var(--aside-border);
-		border-radius: 25px;
-	}
-	.inside{
-		display: flex;
-		justify-content: center;
-		border: none;
-		border-bottom: var(--inside-border);
-		border-left: var(--inside-border);
-		border-radius: 25px;
-		min-width: 100%;
-		min-height: 100%;
-	}
-	.text:hover {
-		font-size: 16px;
-		box-shadow: none;
-	}
-}
-
-/*The following code styles a narrow screen*/
-@media screen and (max-width: 610px) {
-	figure{
-		display: none;
-	}
-	.navigation li{
-		display: block;
-		margin: 10px 0;
-	}
-	.text:hover {
-		font-size: 16px;
-		box-shadow: none;
-	}
-}
-
 /*The following code outlines the <footer> tag and its elements*/
 footer{
 	display: flex;
-	height: 100px;
-	/* border: yellow 2px dashed; */
-	height: 100px;
-	justify-content: center;
-	align-items: center;
+	border: black 1px solid;
+	border-radius: 20px;
+	background-color: aqua;
+	color:black;
+	margin:50px;
+}
+
+/*Code snippet taken from: https://www.w3docs.com/snippets/css/how-to-create-a-blinking-effect-with-css3-animations.html*/
+.blink{
+	animation: blink-animation 0.75s steps(5, start) infinite;
+	-webkit-animation: blink-animation 0.75s steps(5, start) infinite;
+  }
+  @keyframes blink-animation {
+	to {
+	  visibility: hidden;
+	}
+  }
+  @-webkit-keyframes blink-animation {
+	to {
+	  visibility: hidden;
+	}
 }
 /*END of <footer> tag style*/
+
+/*Think of this as the min-width for these styles to take affect*/
+@media screen and (min-width: 768px){
+	figure{
+		display:block;
+		height: 200px;
+		margin-bottom: 25px;
+		background-image: url("../images/ti-994a.png");
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+		margin: 20px;
+	}
+	.navigation li{
+		display: inline;
+		margin: 0px 5px ;
+		margin-right: 10px;
+	}
+}
+
+/*The following styles will take affect at larger screen sizes*/
+@media screen and (min-width: 992px) {
+	#top{
+		display: flex;
+		justify-content: start;
+		padding: 10px;
+	}
+	nav{
+		justify-content: end;
+		margin-right: 50px;
+	}
+	figure{
+		display:block;
+		height: 400px;
+		margin-bottom: 25px;
+		background-image: url("../images/ti-994a.png");
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+		margin: 20px;
+	}
+	.card{
+		flex-direction: row;
+		margin-right: 50px;
+	}
+	.mc-aside {
+		border:none;
+		border-top: var(--aside-border);
+		border-right: var(--aside-border);
+		border-radius: 25px;
+		padding: 3px;
+		flex: 0 0 25%;
+		max-width: 25%;
+	}
+	.middle{
+		display: flex;
+		justify-content: flex-end;
+		border:none;		
+		border-top: var(--middle-border);
+		border-right: var(--middle-border);
+		border-radius: 25px;
+		padding: 3px;
+		min-height: 100%;
+		min-width: 100%;
+	
+	}
+	.inside{
+		display: flex;
+		/* justify-content: flex-end; */
+		border: none;
+		border-top: var(--inside-border);
+		border-right: var(--inside-border);
+		border-radius: 25px;
+		min-height: 100%;
+		min-width: 100%;
+	}
+	.text{
+		margin:0 25px;
+		width: 100%;
+		border: var(--green) 1px solid;
+		border-radius: 25px;
+		transition: all 0.5s ease-in-out;
+	}
+	.text:hover{
+		border-radius: 25px;
+		box-shadow: inset 0px 0px 8px yellow, 0px 0px 10px rebeccapurple;
+	}
+}
+
