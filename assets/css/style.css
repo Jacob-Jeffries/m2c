@@ -19,7 +19,6 @@ html{
 body { 
 	background-color: #000011;
 	color: white;
-	margin: 0 25px;
 	font-size: 16px;
 }
 
@@ -123,7 +122,6 @@ main{
 
 .card{
 	flex-direction: column;
-	padding:30px;
 }
 
 .mc-aside {
@@ -198,7 +196,6 @@ footer{
 	border-radius: 20px;
 	background-color: aqua;
 	color:black;
-	margin:50px;
 }
 
 /*Code snippet taken from: https://www.w3docs.com/snippets/css/how-to-create-a-blinking-effect-with-css3-animations.html*/
@@ -220,6 +217,9 @@ footer{
 
 /*Think of this as the min-width for these styles to take affect*/
 @media screen and (min-width: 768px){
+	body{
+		margin: 0 25px;
+	}
 	figure{
 		display:block;
 		height: 200px;
@@ -234,6 +234,9 @@ footer{
 		display: inline;
 		margin: 0px 5px ;
 		margin-right: 10px;
+	}
+	footer{
+		margin: 25px;
 	}
 }
 
