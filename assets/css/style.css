@@ -16,6 +16,7 @@ body { /*Think of this as the page wrapper - I guess this is an older way of thi
 	background-color: #101010;
 	color: white;
 	margin: 0 25px;
+	font-size: 16px;
 	/* border: lightblue 3px solid; */
 }
 
@@ -170,6 +171,7 @@ main{
 }
 
 .text:hover{
+	font-size: 17px;
 	border: hidden;
 	border-radius: 25px;
 	box-shadow: 10px 10px 8px rebeccapurple;
@@ -223,7 +225,8 @@ main{
 		min-width: 100%;
 		min-height: 100%;
 	}
-	.text {
+	.text:hover {
+		font-size: 16px;
 		box-shadow: none;
 	}
 }
@@ -236,6 +239,10 @@ main{
 	.navigation li{
 		display: block;
 		margin: 10px 0;
+	}
+	.text:hover {
+		font-size: 16px;
+		box-shadow: none;
 	}
 }
 
