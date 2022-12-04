@@ -4,6 +4,8 @@
 	--inside-border: yellow 2px solid;
 }
 
+/*Interesting, the mini project from the end of the CSS module designates a narrow-up design. Starting the most narrow view for portrait phones, then moving up for larger screen sizes*/
+
 * {
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
