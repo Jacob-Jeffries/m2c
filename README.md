@@ -10,6 +10,8 @@ This page is hosted on GitHub pages, and no installation is required.
 
 ## Usage
 
+https://jacob-jeffries.github.io/m2c/
+
 This page is currently a static HTML/CSS page programmed to be viewed across multiple devices and screen sizes. 
 
 ![page screenshot](./portfolio_screenshot.png)
