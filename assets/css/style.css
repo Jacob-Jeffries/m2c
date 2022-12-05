@@ -11,6 +11,7 @@
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+/*The idea of having another white website makes my head hurt!*/
 html{
 	background-color: black;
 }
@@ -22,6 +23,7 @@ body {
 	font-size: 16px;
 }
 
+/*Separate heading tag styles for the ones I've used*/
 h1{
 	font-size: 200%;
 	font-weight: bold;
@@ -43,24 +45,7 @@ h3 {
 	font-family: Courier, monospace;
 }
 
-h4{
-	font-size: 125%;
-	font-weight: bold;
-	margin: 10px;
-}
-
-h5 {
-	font-size: 112%;
-	font-weight: bold;
-	margin: 10px;
-}
-
-h6 {
-	font-size: 100%;
-	font-weight: bold;
-	margin: 10px;
-}
-
+/*General text and link styling for the page*/
 p{
 	margin: 10px;
 }
@@ -110,6 +95,7 @@ nav{
 /*The code below outlines the main <figure> tag and its elements*/
 figure{
 	display: none;
+	/*I have no intention of making someone scroll past a figure on a small screen*/
 }
 
 figcaption{
@@ -118,7 +104,7 @@ figcaption{
 /*END of <figure> tag style*/
 
 
-/*-------------The following code outlines the <main> tag and its elements-----------------*/
+/*The following code outlines the <main> tag and its elements*/
 main{
 	display: flex;
 }
@@ -143,6 +129,7 @@ main{
 	padding: 3px;
 }
 
+/*The .middle and .inside classes gave me the ability to make a nice triple border*/
 .middle{
 	display: flex;
 	justify-content: flex-end;
@@ -167,6 +154,7 @@ main{
 	color: black;
 }
 
+/*The .text class holds the content of each major section*/
 .text {
 	padding: 20px;
 	line-height: 1.5;
@@ -194,6 +182,7 @@ main{
 	padding: 10px;
 }
 
+/*This is the "main" portfolio project and its size will change when the screen size changes*/
 #port0{
 	display: flex;
 	height: 300px;
@@ -213,6 +202,7 @@ main{
 	border: none;
 }
 
+/*These are the titles for each of the Portfolio elements*/
 .title{
 	background-color: #000011;
 	align-self: flex-end;
@@ -242,8 +232,7 @@ main{
 #mc03 fieldset{
 	border: none;
 }
-
-/*----------------------------END of <main> tag style-----------------------------------*/
+/*END of <main> tag style*/
 
 /*The following code outlines the <footer> tag and its elements*/
 footer{
@@ -255,6 +244,8 @@ footer{
 }
 
 /*Code snippet taken from: https://www.w3docs.com/snippets/css/how-to-create-a-blinking-effect-with-css3-animations.html*/
+
+/*This gave me the results I was after but I do not exactly understand how yet*/
 .blink{
 	animation: blink-animation 0.75s steps(5, start) infinite;
 	-webkit-animation: blink-animation 0.75s steps(5, start) infinite;
@@ -271,11 +262,15 @@ footer{
 }
 /*END of <footer> tag style*/
 
+/*The following code modifies the style to facilitate larger screens, such as landscape phones and tablets*/
+
 /*Think of this as the min-width for these styles to take affect*/
 @media screen and (min-width: 768px){
 	body{
 		margin: 0 25px;
 	}
+	
+	/*Once the screen is large enough, the main figure will be displayed*/
 	figure{
 		display:block;
 		height: 200px;
@@ -286,6 +281,8 @@ footer{
 		background-position: center;
 		margin: 20px;
 	}
+	
+	/*The nav links are switched from block to inline and centered*/
 	nav{
 		justify-content: center;
 	}
@@ -294,6 +291,8 @@ footer{
 		margin: 0px 5px ;
 		margin-right: 10px;
 	}
+	
+	/*The portfolio elements are switched from a colum orientation to a wrapped row orientation*/ 
 	#t-mc01{
 		flex-direction: row;
 		flex-wrap: wrap;
@@ -308,6 +307,7 @@ footer{
 		min-width: 100%;
 	}
 
+	/*When the screen allows, I;ve given the footer a margin*/
 	footer{
 		margin: 25px;
 	}
@@ -324,6 +324,8 @@ footer{
 		justify-content: end;
 		margin-right: 50px;
 	}
+	
+	/*With a larger screen I've increased the size of my main figure*/
 	figure{
 		display:block;
 		height: 400px;
@@ -334,10 +336,14 @@ footer{
 		background-position: center;
 		margin: 20px;
 	}
+	
+	/*Once the screen is large enough the section header elements move to the left side*/
 	.card{
 		flex-direction: row;
 		margin-right: 50px;
 	}
+	
+	/*I've switched the direction of the borders in the larger screen size*/
 	.mc-aside {
 		border:none;
 		border-top: var(--aside-border);
@@ -396,6 +402,8 @@ footer{
 }
 
 @media screen and (min-width: 1900px) {
+	
+	/*At the largest scale: 1080p, I've made the main portfolio element much larger*/
 	#port0{
 		min-width: 100%;
 		height: 800px;
