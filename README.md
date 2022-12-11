@@ -19,7 +19,7 @@ This page is currently a static HTML/CSS page programmed to be viewed across mul
 ## License 
 
 MIT License
-
+git 
 Copyright (c) [2022] [Jacob Jeffries]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
